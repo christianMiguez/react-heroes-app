@@ -39,7 +39,7 @@ export const HeroScreen = ({history}) => {
     return (
         <>
             <div className="col-5">
-                <img src={`../assets/heroes/${id}.jpg`} alt={superhero} className="img-thumbnail" />
+                <img src={`../assets/heroes/${id}.jpg`} alt={superhero} className="img-thumbnail animate__animated animate__fadeInLeft" />
             </div>
             <div className="col-7">
                 <h3>{superhero}</h3>
