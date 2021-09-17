@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { useParams, Redirect } from 'react-router-dom'
 import { getHeroesById } from '../../selectors/getHeroesById';
 
@@ -6,8 +6,10 @@ export const HeroScreen = ({history}) => {
 
     const {heroid} = useParams();
 
-
-    const hero = getHeroesById(heroid)
+    // good case for use memo (render only if ID changes)
+    // always is good to do with high procces
+    // const hero = getHeroesById(heroid)
+     const hero = useMemo( () => getHeroesById(heroid), [heroid] );
 
 
     if (!hero) {
