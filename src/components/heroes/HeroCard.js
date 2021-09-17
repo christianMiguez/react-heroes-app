@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const HeroCard = ({id, superhero, alter_ego, characters}) => {
     return (
-        <div className="col-md-6">
+        <div className="col-12 col-lg-6">
             <div className="card m-2" style={{maxWidth: 540}}>
                 <div className="row">
                     <div className="col-md-4">
