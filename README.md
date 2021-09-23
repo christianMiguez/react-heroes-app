@@ -1,4 +1,4 @@
-Demo: htpps://cosmicdesarrolloweb.com/superheroes
+Demo: https://cosmicdesarrolloweb.com/superheroes
 
 # Getting Started with Create React App
 
